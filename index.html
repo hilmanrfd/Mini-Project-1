@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta aria-details="Halaman Home" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+      a {
+        color: palevioletred;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      a:visited {
+        color: red;
+      }
+
+      a[href] {
+        color: blue;
+      }
+
+      .mytable {
+        background-color: crimson;
+      }
+
+      .tablefont {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: white;
+      }
+      #heading2 {
+        color: darkgoldenrod;
+      }
+      #paragraph::first-letter {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .test1::first-line {
+        background-color: aquamarine;
+      }
+    </style>
+    <!--ini ^ internal styles css-->
+    <title>Home | Hilmanrfd Web</title>
+  </head>
+
+  <body>
+    <h1>Welcome to Hilmanrfd Website</h1>
+    <h2 id="heading2">Hilman Web pake h2</h2>
+    <h3>Hilman Web pake h3</h3>
+    <h4 id="heading2">Hilman Web pake h4</h4>
+    <!--naming id itu unique seharusnya, gabisa di daur ulang, ini di h4 contoh case yang salah-->
+
+    <hr />
+    <a href="https://google.com">Google</a> |
+    <a href="./service.html">Service</a> |
+    <!--pake dot atau . karena itu ngambil base url folder-->
+    <a href="./sub pages/page.html">Sub Pages</a> |
+    <a href="./contacus.html">Contact Us</a> | <a> Tidak kemana-mana</a> |
+    <hr />
+
+    <img
+      src="/image.jpg"
+      width="200"
+      height="120"
+      title="Meme Menahan Sabar"
+      alt="Meme Menahan Sabar"
+    />
+    <!--angka height dan width merupakan pixel/px size-->
+
+    <figure class="mytable">
+      <img
+        src="https://static.javatpoint.com/htmlpages/images/good-morning.jpg"
+        width="200"
+        height="120"
+        title="Burung"
+        alt="Burung"
+      />
+      <figcaption>Caption: Burung di Batang</figcaption>
+    </figure>
+
+    <img
+      src=""
+      width="200"
+      height="120"
+      title="Image Crash"
+      alt="ini crash karena img src dikosongin"
+    />
+
+    <p title="paragraph" id="paragraph">Paragraph pake P</p>
+    <p style="color: blue">
+      <!--ini ^ inline styles css-->
+      Ini test paragraph ke 2 pake <b>Bold</b> yang ada di samping
+    </p>
+    <p class="test1">
+      Test 1 paragraph gaperlu enter pake break (br) <br />nah ini udah
+      paragraph beda
+    </p>
+    <!--INI KOMENTAR, GABAKAL KELIATAN DI WEB TAPI DI INSPECT SOURCE CODE ADA-->
+    <hr />
+
+    <p>HTML TEXT Formatting</p>
+    <b> ini Bold pake /b </b> | <i> ini Italic pake /i </i> <br />
+    <strong> Ini Strong pake /strong | </strong>
+    <!-- strong memberikan info tambahan u/ semantic -->
+    <em> Ini Emphasis pake /em </em>
+    <!-- Emphasis memberikan info tambahan untuk semantic -->
+    <br />
+    <hr />
+
+    <p>Contoh penggunaan UL</p>
+    <ul>
+      <!--unordered list tag, untuk membuat list diawal dengan ul-->
+      <li>Task 1</li>
+      <li>Task 2</li>
+      <li>Task 3</li>
+    </ul>
+
+    <p>Contoh penggunaan OL</p>
+    <ol>
+      <!--ordered / numbered list tag, untuk membuat list diawal dengan ul-->
+      <li>Task 1</li>
+      <li>Task 2</li>
+      <li>Task 3</li>
+    </ol>
+    <hr />
+    <table border="1" cellpadding="5" cellspacing="0" class="mytable">
+      <!--border, cellpadding adalah property-->
+      <thead>
+        <!--bagian atas table-->
+        <tr>
+          <!-- table row -->
+          <th>Name</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--isi table-->
+        <tr>
+          <td>Hilman Rafialdy</td>
+          <td>Chief Executive Officer (CEO)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Jihyo</td>
+          <!--rowspan merge table kebawah-->
+          <td>Soon to be Wife</td>
+        </tr>
+        <tr>
+          <td colspan="2">Jihyo</td>
+          <!--colspan buat merge table ke samping-->
+        </tr>
+      </tbody>
+    </table>
+
+    <div
+      style="
+        height: 100px;
+        width: 200px;
+        background-color: blanchedalmond;
+        border: 2px solid blue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        padding-top: 10px;
+        padding-left: 20px;
+      "
+    >
+      div ini pakai border solid, padding & margin-top, margin bottom dan left
+    </div>
+
+    <div
+      style="
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        border: 10px dotted purple;
+        margin: 40px 10px 50px 20px;
+        padding: 40px 10px 50px 20px;
+      "
+    >
+      div ini pakai border dotted, padding & margin 1 line
+    </div>
+
+    <table border="1" cellpadding="5" cellspacing="0" class="mytable tablefont">
+      <!--border, cellpadding adalah property-->
+      <thead>
+        <!--bagian atas table-->
+        <tr>
+          <!-- table row -->
+          <th>Name</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--isi table-->
+        <tr>
+          <td>Hilman Rafialdy</td>
+          <td>Chief Executive Officer (CEO)</td>
+        </tr>
+        <tr>
+          <td>Jihyo</td>
+          <td>Soon to be Wife</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(palegreen, grey);
+}
+
+h1 {
+  background-color: violet;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-image: url("./image.jpg");
+  background-position: -10px 5px;
+  background-size: contain;
+}

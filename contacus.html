@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <hr />
+
+    <a href="./index.html"> Home </a> | <a href="./service.html"> Service </a> |
+    <hr />
+
+    <form method="post" action="">
+      <fieldset>
+        <legend>Data Diri</legend>
+        <div>
+          <label for="name"> Name </label><br />
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="email"> Email </label><br />
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password"> Password </label><br />
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div>
+          <label> Favorite Game </label><br />
+          <input type="checkbox" name="hobby" value="Point Blank" id="pb" />
+          <!-- label for agar klik name itu bisa focus ke field yang di klik-->
+          <label for="pb">Point Blank</label>
+          <input type="checkbox" name="hobby" value="Genshin Impact" id="gi" />
+          <label for="gi">Genshin Impact</label>
+          <input type="checkbox" name="hobby" value="Flappy Bird" id="fb" />
+          <label for="fb">Flappy Bird</label>
+        </div>
+        <div>
+          <label> Gender</label><br />
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- <form method="get" action="https://www.google.com/search">
+        <div>
+            <label> Cari di Google </label><br>
+            <input type="text" name="q"/>
+        </div>
+        <div>
+            <button type="submit">Search</button>
+        </div>
+    </form> -->
+  </body>
+</html>
